@@ -1,0 +1,23 @@
+
+
+<div class="navbar navbar-admin fixed-top">
+
+  <a class="" href="dashboard.php"><i class="fa fa-fw fa-home"></i> Home</a> 
+  
+  <a href="notes.php"><i class="fa fa-sticky-note-o"></i> Notes</a> 
+  
+  <a href="users.php"><i class="fa fa-fw fa-user"></i></i> Users</a> 
+  
+	<a href='profile.php?name=<?php echo $_SESSION['username']; ?>'>
+		
+			
+				<img style="width:40px; height:40px ;background-size:cover" align="left" src="profilepics/<?php echo $_SESSION['image']; ?>" alt=""
+							class="rounded-circle img-responsive">
+			
+				 <?php echo $_SESSION['name']; ?></a>
+				 
+				 
+				 
+				 
+	<a href="logout.php" style="color:rgb(245,245,245);"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout </a>
+</div>

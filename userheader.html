@@ -1,0 +1,23 @@
+
+
+<div class="navbar navbar-admin fixed-top">
+
+  <a class="" href="userhome.php"><i class="fa fa-fw fa-home"></i> Home</a> 
+  
+  <a href="usernotesupload.php"><i class="fa fa-sticky-note-o"></i> Uploads</a> 
+  
+  <a href="usernotifications.php"><i class="fa fa-globe" aria-hidden="true"></i> Notifications</a> 
+  
+	<a href='profile.php?name=<?php echo $_SESSION['username']; ?>'>
+		
+			
+				<img style="width:40px; height:40px ;background-size:cover" align="left" src="profilepics/<?php echo $_SESSION['image']; ?>" alt=""
+							class="rounded-circle img-responsive">
+			
+				 <?php echo $_SESSION['name']; ?></a>
+				 
+				 
+				 
+				 
+	<a href="logout.php" style="color:rgb(245,245,245);"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout </a>
+</div>
